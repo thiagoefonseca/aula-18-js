@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aula 18</title>
+</head>
+<body>
+    <input type="button" value="Clique aqui" onclick="mostraAlerta()">
+    <input type="button" value="Clique aqui" onclick="mostraAlerta('Thiago e DUDU')">
+    <br><br>
+    
+    <!--Função com parametro-->
+    <label>Digite o primeiro numero:</label>
+    <input type="number" id="idN1">
+    <label>Digite o segundo numero:</label>
+    <input type="number" id="idN2">
+    <input type="button" value="Clique aqui"
+    onclick='idResultado.value = soma(idN1.value, idN2.value)'>
+    <label>Resultado: </label>
+    <input type="number" id="idResultado"> <br><br>
+    
+    <!--Função sem parametro-->
+    <label>Valor:</label>
+    <input type="number" id="idN"><br>
+    <input type="button" value="Clique aqui"
+    onclick=dobro()><br>
+    <label>Resultado: </label>
+    <label id="idResult"></label>
+
+    
+<!-- Função calculadora--> 
+    <label>Digite N1: </label> 
+    <input type="text" id="idN11"><br> 
+    <label>Digite N2: </label>
+    <input type="text" id="idN22"><br>
+    <label>Resposta: </label>
+    <label id="idResposta"></label> <br> 
+    <input type="button" value="+" onclick=calculadora(this.value)>
+</body>
+     
+</body>
+</html>
